@@ -1,0 +1,418 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@media (max-width:464px) {
+ 
+
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 400px;
+        background-color:rgb(197, 199, 199);
+    }
+  
+    .contenedor{
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+        height: 70px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        opacity: 0;
+        transition: all 1s ease-in-out;
+        transform: translateY(-100px);
+        margin-top: 10px;
+        cursor: pointer;
+        flex-shrink: 0;
+        
+    }
+    .contenedor.activar{
+    transform-origin: top;
+    height: 70px;
+    
+    }
+
+.contenedor.activar{
+    transform-origin: top;
+    height: 75px;
+   }
+    
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgb(53, 75, 116);
+        margin: 10px;
+    }
+    .mor{
+        background-color: rgb(111, 0, 255);
+        color: rgb(255, 255, 255);
+    }
+    .letra.num{
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+    }
+    .textU{
+        width: 40%;
+        height: 40px;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        gap: 2px;
+        flex-wrap:wrap;
+    }
+    .gmai{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .name{
+        display: flex;
+        align-items: center;
+        width: auto;
+        height: 20px;
+        background-color: rgb(255, 255, 255);
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    .correo{
+        display: flex;
+        align-items: center;
+        width: auto;
+        height: 20px;
+        background-color: rgb(255, 255, 255);
+        margin-top: 10px;
+    
+    }
+    h5{
+        font-size: 7px;
+        margin-bottom: 0;
+        gap: 4px;
+        margin-bottom: -4px;
+        opacity: 60%;
+        font-weight: 200;
+    }
+    h2{
+        font-size: 7px;
+        margin-bottom: 0;
+        gap: 4px;
+        margin-bottom: -4px;
+        opacity: 60%;
+        font-weight: 200;
+    }
+    .hora{
+        display: flex;
+        align-items: center;
+        width: auto;
+        height: 20px;
+        align-items: center;
+        margin-top: 10px;
+    
+    }
+    h4{
+        font-size: 7px;
+        margin-bottom: 0;
+        gap: 4px;
+        margin-bottom: -4px;
+        opacity: 60%;
+        font-weight: 200;
+        
+    }
+    
+    .letra{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgb(216, 91, 91);
+        color: white;
+        margin: 10px;
+    
+    }
+    
+    .arro{
+        width: 10%;
+        height: 40px;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    
+    }
+    
+    .iconA{
+        display: flex;
+        transform: rotate(45deg);
+        transition: all 400ms ease-in-out;
+    
+    }
+    .iconA.activar{
+        transform: rotate(225deg);
+    }
+    .slaider{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 90px;
+        flex-direction: column;
+        background-color:rgb(197, 199, 199);
+        overflow-y: scroll; 
+       transition: all 1s ease-in-out;
+    }
+
+  
+    .iconS{
+        transform: rotate(45deg);
+        cursor: pointer; 
+        transition: all 1s ease-in-out;
+        opacity: 0;
+    }
+    .arrow{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .iconS{
+        transform: rotate(45deg);
+        cursor: pointer; 
+        transition: all 1s ease-in-out;
+        opacity: 0;
+    }
+    .iconS.accion{
+        transform: rotate(225deg);
+      
+    }
+    .slaider.accion{
+        height: 300px;
+        
+    }
+    h2{
+        font-size: 7px;
+        margin-bottom: 0;
+        gap: 4px;
+        margin-bottom: -4px;
+        opacity: 60%;
+        font-weight: 200;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+      
+
+    }
+
+    h2.activar{ 
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+
+    }
+    
+@media (min-width:1464px) {
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 400px;
+        background-color:rgb(197, 199, 199);
+
+    }
+    .slaider{
+        display: flex;
+        align-items: center;
+        width: 20%;
+        height: 75px;
+        flex-direction: column;
+        background-color:rgb(197, 199, 199);
+        overflow-y: scroll; 
+       transition: all 1s ease-in-out;
+    }
+    .contenedor{
+        display: flex;
+        width: 90%;
+        height: 60px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        opacity: 0;
+        transition: all 1s ease-in-out;
+        transform: translateY(-100px);
+        margin: 5px;
+        flex-shrink: 0;
+        gap: 1px;
+
+    }
+.contenedor.activar{
+    transform-origin: top;
+    height: 75px;
+   }
+    
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgb(53, 75, 116);
+        margin: 10px;
+    }
+    .mor{
+        background-color: rgb(111, 0, 255);
+        color: rgb(255, 255, 255);
+    }
+    .letra.num{
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+    }
+    .textU{
+        width: 40%;
+        height: 40px;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        gap: 2px;
+        flex-wrap:wrap;
+        margin-top: 10px;
+    }
+    .gmai{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .name{
+        display: flex;
+        align-items: center;
+        width: auto;
+        height: 20px;
+        background-color: rgb(255, 255, 255);
+        font-size: 10px;
+    }
+    .correo{
+        display: flex;
+        align-items: center;
+        width: auto;
+        height: 20px;
+        background-color: rgb(255, 255, 255);
+
+    }
+    h5{
+        font-size: 7px;
+        margin-bottom: 0;
+        gap: 4px;
+        margin-bottom: -4px;
+        opacity: 60%;
+        font-weight: 200;
+    }
+    h2{
+        font-size: 7px;
+        margin-bottom: 0;
+        gap: 4px;
+        margin-bottom: -4px;
+        opacity: 60%;
+        font-weight: 200;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+      
+
+    }
+
+    h2.activar{ 
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+    .hora{
+        display: flex;
+        align-items: center;
+        width: auto;
+        height: 20px;
+        align-items: center;
+    }
+    h4{
+        font-size: 7px;
+        margin-bottom: 0;
+        gap: 4px;
+        margin-bottom: -4px;
+        opacity: 60%;
+        font-weight: 200;
+
+    }
+    
+    .letra{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgb(216, 91, 91);
+        color: white;
+        margin: 10px;
+        cursor: pointer;
+
+    }
+    
+    .arro{
+        width: 10%;
+        height: 40px;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+
+    }
+    
+    .iconA{
+        display: flex;
+        transform: rotate(45deg);
+        transition: all 400ms ease-in-out;
+        cursor: pointer;
+    }
+    .iconA.activar{
+        transform: rotate(225deg);
+    }
+    .iconB{
+        display: flex;
+        transform: rotate(45deg);
+        transition: all 400ms ease-in-out;
+        cursor: pointer;
+    }
+
+    .arrow{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .iconS{
+        transform: rotate(45deg);
+        cursor: pointer; 
+        transition: all 1s ease-in-out;
+        opacity: 0;
+    }
+    .iconS.accion{
+        transform: rotate(225deg);
+      
+    }
+    .slaider.accion{
+        height: 220px;
+        
+    }
+}
+
