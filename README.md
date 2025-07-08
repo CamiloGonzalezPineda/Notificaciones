@@ -2,7 +2,7 @@
 
 Este proyecto es un ejemplo de interfaz de notificaciones desarrollado en HTML, CSS y JavaScript.
 
-👉 [Ver página desplegada](https://TU_USUARIO.github.io/TU_REPOSITORIO/)
+👉 [Ver página desplegada](https://camilogonzalezpineda.github.io/Notificaciones/)
 
 ## 📂 Estructura de carpetas
 
